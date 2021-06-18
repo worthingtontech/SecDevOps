@@ -1,0 +1,5 @@
+#!/bin/bash
+sudo free | awk {'print $3'} | head -2 >> /home/sysadmin/Projects/freemem/free_mem.txt
+sudo df | awk {'print $3,$5'} >> /home/sysadmin/Projects/diskuse/disk_usage.txt
+sudo lsof >> /home/sysadmin/Projects/openlist/open_list.txt
+sudo df | awk {'print $1,$4'} >> /home/sysadmin/Projects/diskuse/free_disk.txt

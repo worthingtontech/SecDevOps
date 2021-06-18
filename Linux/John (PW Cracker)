@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+sudo john --wordlist="/home/sysadmin/rockyou.txt" /etc/shadow
