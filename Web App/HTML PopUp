@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Prompt</h1>
+<h2>Aaron's Script</h2>
+<button onclick="myFunction()">Try it</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var txt;
+  var person = prompt("Please enter your street name:", "IE: Harry Potter");
+  if (person == null || person == "") {
+    txt = "You cannot proceed Nameless.";
+  } else {
+    txt = "Hello " + person + "! You may continue your mission.";
+  }
+  document.getElementById("demo").innerHTML = txt;
+}
+</script>
+
+</body>
+</html>
